@@ -7,7 +7,7 @@ class CreateEpisodes < ActiveRecord::Migration[5.2]
       t.string :view_time
       t.string :cast
       t.integer :priority
-      t.integer :show_id
+      t.integer :season_id
 
       t.timestamps
     end
