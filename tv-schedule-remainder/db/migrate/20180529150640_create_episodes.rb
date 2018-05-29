@@ -8,6 +8,8 @@ class CreateEpisodes < ActiveRecord::Migration[5.2]
       t.string :cast
       t.integer :priority
       t.integer :season_id
+      t.boolean :viewed
+      t.boolean :release_date
 
       t.timestamps
     end
