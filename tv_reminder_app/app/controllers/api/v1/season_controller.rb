@@ -8,4 +8,10 @@ class Api::V1::SeasonController < ApplicationController
   def create
 
   end
+
+  private
+
+  def season_params
+    params.require(:season).permit(:show_id, :year, :air_date, :cast)
+  end
 end

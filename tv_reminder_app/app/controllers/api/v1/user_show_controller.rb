@@ -13,7 +13,7 @@ class Api::V1::UserShowController < ApplicationController
   private
 
   def user_show_params
-    params.require(:user_show).permit()
+    params.require(:user_show).permit(:user_id, :show_id)
   end
 
 end

@@ -12,7 +12,7 @@ class Api::V1::EpisodeController < ApplicationController
   private
 
   def episode_params
-    params.require(:episode).permit()
+    params.require(:episode).permit(:title, :description, :img_url, :view_time, :cast, :priority, :season_id, :release_date, :viewed)
   end
 
 end
